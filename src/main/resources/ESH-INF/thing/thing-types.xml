@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<thing:thing-descriptions bindingId="yald"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:thing="https://openhab.org/schemas/thing-description/v1.0.0"
+    xsi:schemaLocation="https://openhab.org/schemas/thing-description/v1.0.0
+        https://openhab.org/schemas/thing-description-1.0.0.xsd">
+
+    <thing-type id="yald">
+        <label>YaLD board</label>
+        <description>YalD Binding</description>
+
+        <channels>
+            <channel typeId="dimmer" id="dimmer1" />
+            <channel typeId="dimmer" id="dimmer2" />
+            <channel typeId="dimmer" id="dimmer3" />
+            <channel typeId="dimmer" id="dimmer4" />
+            <channel typeId="dimmer" id="dimmer5" />
+            <channel typeId="dimmer" id="dimmer6" />
+            <channel typeId="dimmer" id="dimmer7" />
+            <channel typeId="dimmer" id="dimmer8" />
+            <channel typeId="dimmer" id="dimmer9" />
+            <channel typeId="dimmer" id="dimmer10" />
+            <channel typeId="dimmer" id="dimmer11" />
+            <channel typeId="dimmer" id="dimmer12" />
+            <channel typeId="dimmer" id="dimmer13" />
+            <channel typeId="dimmer" id="dimmer14" />
+            <channel typeId="dimmer" id="dimmer15" />
+            <channel typeId="dimmer" id="dimmer16" />
+        </channels>
+
+        <config-description>
+            <parameter name="ipAddress" type="text" required="true">
+                <label>IP address</label>
+                <description>The IP address of the YaLD board</description>
+            </parameter>
+        </config-description>
+    </thing-type>
+
+    <channel-type id="dimmer">
+        <item-type>dimmer</item-type>
+        <label>Dimmer</label>
+        <description>Brightness Dimmer</description>
+        <category>dimmer</category>
+    </channel-type>
+</thing:thing-descriptions>

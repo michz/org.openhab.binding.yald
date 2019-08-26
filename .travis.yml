@@ -1,0 +1,28 @@
+language: java
+sudo: false
+
+jdk:
+  - openjdk8
+
+cache:
+  directories:
+    - "$HOME/.m2"
+
+install:
+  - mvn clean install -DskipTests=true
+#  - mvn clean install -DskipChecks=true -DskipTests=true
+
+script:
+  - echo "Nothing to do here for now."
+
+#deploy:
+#  provider: releases
+#  api_key:
+#    secure:
+#  file:
+#    - target/org.openhab.binding.yald-2.5.0-SNAPSHOT.jar
+#    - target/org.openhab.binding.yald-2.5.0-SNAPSHOT-sources.jar
+#  skip_cleanup: true
+#  on:
+#    repo: michz/org.openhab.binding.yald
+#    tags: true
